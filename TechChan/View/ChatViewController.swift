@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ChatViewController: UIViewController {
+final class ChatViewController: KeyboardSlidingViewController {
 
     private var datasource: ChatTableViewDataSource?
     private let techChanManager = TechChanModel.shared
@@ -18,9 +18,6 @@ final class ChatViewController: UIViewController {
     @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var postMessageTextField: UITextField!
     @IBOutlet private var chatTableView: TouchEventChainTableView!
-    
-    // 編集中のTextFieldを保持する変数
-    private var activeTextField: UITextField? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,42 +74,6 @@ final class ChatViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
             // どのtextfield編集に対しても閉じれるようにviewに対してendEditngする
             self.view.endEditing(true)
-    }
-
-}
-
-// TextField入力時にキーボード分だけ画面をずらす処理
-extension ChatViewController: UITextFieldDelegate {
-
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        // 編集対象のTextFieldを保存する
-        activeTextField = textField
-        return true;
-    }
-
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-
-    // NotificationCenterからのキーボード表示通知に伴う処理
-    @objc func keyboardWillShow(_ notification: Notification) {
-        let rect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-        guard let keyboardHeight = rect?.size.height else {
-            return
-        }
-            let duration: TimeInterval? = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double
-            UIView.animate(withDuration: duration!, animations: { () in
-                self.view.transform = CGAffineTransform(translationX: 0, y: -keyboardHeight)
-            })
-    }
-
-    // NotificationCenterからのキーボード非表示通知に伴う処理
-    @objc func keyboardWillHide(_ notification: Notification) {
-        let duration: TimeInterval? = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double
-        UIView.animate(withDuration: duration!, animations: { () in
-            self.view.transform = CGAffineTransform.identity
-        })
     }
 
 }

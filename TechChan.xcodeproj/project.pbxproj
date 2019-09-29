@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		16F12ABE20344B6F4C58C111 /* Pods_TechChanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38BF463D6EA38E38120522 /* Pods_TechChanTests.framework */; };
+		666CBEC92341443A00C4EC79 /* KeyboardSlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666CBEC82341443A00C4EC79 /* KeyboardSlidingViewController.swift */; };
 		66798706233B00A100FFD94E /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66798704233B00A100FFD94E /* ChatTableViewCell.swift */; };
 		66798707233B00A100FFD94E /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66798705233B00A100FFD94E /* ChatTableViewCell.xib */; };
 		66798709233B032700FFD94E /* ChatTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66798708233B032700FFD94E /* ChatTableViewDataSource.swift */; };
 		66A78B472340E69400788E32 /* IBDesiganbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B462340E69300788E32 /* IBDesiganbleButton.swift */; };
-		66A78B4A2340E70600788E32 /* TouchEventChainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B492340E70600788E32 /* TouchEventChainTableView.swift */; };
 		66A78B4E2340E7F400788E32 /* IBDesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */; };
 		66A78B4F2340E7F400788E32 /* IBDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B4D2340E7F400788E32 /* IBDesignableView.swift */; };
 		66A78B512340E91000788E32 /* techchan_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A78B502340E91000788E32 /* techchan_logo.png */; };
@@ -56,11 +56,11 @@
 		1A38BF463D6EA38E38120522 /* Pods_TechChanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechChanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D02400D43854BE6F4C3A7F4 /* Pods-TechChan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChan.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechChan/Pods-TechChan.release.xcconfig"; sourceTree = "<group>"; };
 		459B027FD13F23A86CFD9D24 /* Pods_TechChan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechChan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		666CBEC82341443A00C4EC79 /* KeyboardSlidingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSlidingViewController.swift; sourceTree = "<group>"; };
 		66798704233B00A100FFD94E /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		66798705233B00A100FFD94E /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
 		66798708233B032700FFD94E /* ChatTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewDataSource.swift; sourceTree = "<group>"; };
 		66A78B462340E69300788E32 /* IBDesiganbleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesiganbleButton.swift; sourceTree = "<group>"; };
-		66A78B492340E70600788E32 /* TouchEventChainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchEventChainTableView.swift; sourceTree = "<group>"; };
 		66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableLabel.swift; sourceTree = "<group>"; };
 		66A78B4D2340E7F400788E32 /* IBDesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
 		66A78B502340E91000788E32 /* techchan_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techchan_logo.png; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		66A78B482340E6B200788E32 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				66A78B492340E70600788E32 /* TouchEventChainTableView.swift */,
+				666CBEC82341443A00C4EC79 /* KeyboardSlidingViewController.swift */,
 				66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */,
 				66A78B4D2340E7F400788E32 /* IBDesignableView.swift */,
 				66A78B462340E69300788E32 /* IBDesiganbleButton.swift */,
@@ -473,9 +473,9 @@
 				66A78B472340E69400788E32 /* IBDesiganbleButton.swift in Sources */,
 				66C85CC22338A5ED0037EA5C /* AppDelegate.swift in Sources */,
 				66A78B4E2340E7F400788E32 /* IBDesignableLabel.swift in Sources */,
-				66A78B4A2340E70600788E32 /* TouchEventChainTableView.swift in Sources */,
 				66C85CC42338A5ED0037EA5C /* SceneDelegate.swift in Sources */,
 				66798706233B00A100FFD94E /* ChatTableViewCell.swift in Sources */,
+				666CBEC92341443A00C4EC79 /* KeyboardSlidingViewController.swift in Sources */,
 				66C85CF92338B3FA0037EA5C /* ChatViewController.swift in Sources */,
 				66798709233B032700FFD94E /* ChatTableViewDataSource.swift in Sources */,
 				66C85CCC2338A5ED0037EA5C /* TechChan.xcdatamodeld in Sources */,

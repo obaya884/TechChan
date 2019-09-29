@@ -8,16 +8,13 @@
 
 import UIKit
 
-final class LoginViewController: UIViewController {
+final class LoginViewController: KeyboardSlidingViewController {
     
     private let techChanManager = TechChanModel.shared
 
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
     
-    // 編集中のTextFieldを保持する変数
-    private var activeTextField: UITextField? = nil
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // TextFieldまわり
@@ -60,49 +57,4 @@ final class LoginViewController: UIViewController {
             // どのtextfield編集に対しても閉じれるようにviewに対してendEditngする
             self.view.endEditing(true)
     }
-
-
 }
-
-extension LoginViewController: UITextFieldDelegate {
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        // 編集対象のTextFieldを保存する
-        activeTextField = textField
-        return true;
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-
-    // NotificationCenterからのキーボード表示通知に伴う処理
-    @objc func keyboardWillShow(_ notification: Notification) {
-        guard let textField = activeTextField else {
-            return
-        }
-        let rect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-        guard let keyboardHeight = rect?.height else {
-            return
-        }
-        let mainBoundsSize = UIScreen.main.bounds.size
-        let textFieldLimit = textField.frame.origin.y + textField.frame.height + 8.0
-        let keyboardLimit = mainBoundsSize.height - keyboardHeight
-        if keyboardLimit <= textFieldLimit {
-            let duration: TimeInterval? = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as? Double
-            UIView.animate(withDuration: duration!, animations: { () in
-                self.view.transform = CGAffineTransform(translationX: 0, y: -keyboardHeight)
-            })
-        }
-    }
-    // NotificationCenterからのキーボード非表示通知に伴う処理
-    @objc func keyboardWillHide(_ notification: Notification) {
-        let duration: TimeInterval? = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as? Double
-        UIView.animate(withDuration: duration!, animations: { () in
-            self.view.transform = CGAffineTransform.identity
-        })
-    }
-
-}
-
