@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16F12ABE20344B6F4C58C111 /* Pods_TechChanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A38BF463D6EA38E38120522 /* Pods_TechChanTests.framework */; };
+		66798706233B00A100FFD94E /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66798704233B00A100FFD94E /* ChatTableViewCell.swift */; };
+		66798707233B00A100FFD94E /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66798705233B00A100FFD94E /* ChatTableViewCell.xib */; };
+		66798709233B032700FFD94E /* ChatTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66798708233B032700FFD94E /* ChatTableViewDataSource.swift */; };
+		66A78B472340E69400788E32 /* IBDesiganbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B462340E69300788E32 /* IBDesiganbleButton.swift */; };
+		66A78B4A2340E70600788E32 /* TouchEventChainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B492340E70600788E32 /* TouchEventChainTableView.swift */; };
+		66A78B4E2340E7F400788E32 /* IBDesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */; };
+		66A78B4F2340E7F400788E32 /* IBDesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A78B4D2340E7F400788E32 /* IBDesignableView.swift */; };
+		66A78B512340E91000788E32 /* techchan_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66A78B502340E91000788E32 /* techchan_logo.png */; };
 		66C85CC22338A5ED0037EA5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CC12338A5ED0037EA5C /* AppDelegate.swift */; };
 		66C85CC42338A5ED0037EA5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CC32338A5ED0037EA5C /* SceneDelegate.swift */; };
-		66C85CC62338A5ED0037EA5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CC52338A5ED0037EA5C /* ViewController.swift */; };
+		66C85CC62338A5ED0037EA5C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CC52338A5ED0037EA5C /* LoginViewController.swift */; };
 		66C85CC92338A5ED0037EA5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C85CC72338A5ED0037EA5C /* Main.storyboard */; };
 		66C85CCC2338A5ED0037EA5C /* TechChan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CCA2338A5ED0037EA5C /* TechChan.xcdatamodeld */; };
 		66C85CCE2338A5F00037EA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C85CCD2338A5F00037EA5C /* Assets.xcassets */; };
 		66C85CD12338A5F00037EA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C85CCF2338A5F00037EA5C /* LaunchScreen.storyboard */; };
 		66C85CDC2338A5F00037EA5C /* TechChanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CDB2338A5F00037EA5C /* TechChanTests.swift */; };
 		66C85CE72338A5F00037EA5C /* TechChanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CE62338A5F00037EA5C /* TechChanUITests.swift */; };
+		66C85CF52338A6750037EA5C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66C85CF42338A6750037EA5C /* GoogleService-Info.plist */; };
+		66C85CF72338B3B50037EA5C /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C85CF62338B3B50037EA5C /* Chat.storyboard */; };
+		66C85CF92338B3FA0037EA5C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CF82338B3FA0037EA5C /* ChatViewController.swift */; };
+		66C85CFB2338B5300037EA5C /* TechChanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C85CFA2338B5300037EA5C /* TechChanModel.swift */; };
+		9011B1D0280BEE5996877CE4 /* Pods_TechChanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB540AFE49E53B61161BD8 /* Pods_TechChanUITests.framework */; };
+		ACA0FB5346842D1590976379 /* Pods_TechChan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 459B027FD13F23A86CFD9D24 /* Pods_TechChan.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01C7D5025177A4B5F9AC6D44 /* Pods-TechChanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChanUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechChanUITests/Pods-TechChanUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0730706B8A54D260AD481E54 /* Pods-TechChanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChanUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechChanUITests/Pods-TechChanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A38BF463D6EA38E38120522 /* Pods_TechChanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechChanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D02400D43854BE6F4C3A7F4 /* Pods-TechChan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChan.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechChan/Pods-TechChan.release.xcconfig"; sourceTree = "<group>"; };
+		459B027FD13F23A86CFD9D24 /* Pods_TechChan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechChan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66798704233B00A100FFD94E /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		66798705233B00A100FFD94E /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
+		66798708233B032700FFD94E /* ChatTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewDataSource.swift; sourceTree = "<group>"; };
+		66A78B462340E69300788E32 /* IBDesiganbleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesiganbleButton.swift; sourceTree = "<group>"; };
+		66A78B492340E70600788E32 /* TouchEventChainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchEventChainTableView.swift; sourceTree = "<group>"; };
+		66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableLabel.swift; sourceTree = "<group>"; };
+		66A78B4D2340E7F400788E32 /* IBDesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignableView.swift; sourceTree = "<group>"; };
+		66A78B502340E91000788E32 /* techchan_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techchan_logo.png; sourceTree = "<group>"; };
 		66C85CBE2338A5ED0037EA5C /* TechChan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechChan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C85CC12338A5ED0037EA5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66C85CC32338A5ED0037EA5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		66C85CC52338A5ED0037EA5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		66C85CC52338A5ED0037EA5C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		66C85CC82338A5ED0037EA5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66C85CCB2338A5ED0037EA5C /* TechChan.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechChan.xcdatamodel; sourceTree = "<group>"; };
 		66C85CCD2338A5F00037EA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +79,14 @@
 		66C85CE22338A5F00037EA5C /* TechChanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechChanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C85CE62338A5F00037EA5C /* TechChanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechChanUITests.swift; sourceTree = "<group>"; };
 		66C85CE82338A5F00037EA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C85CF42338A6750037EA5C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		66C85CF62338B3B50037EA5C /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		66C85CF82338B3FA0037EA5C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		66C85CFA2338B5300037EA5C /* TechChanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechChanModel.swift; sourceTree = "<group>"; };
+		A8A304C42DC63B0A91884E10 /* Pods-TechChanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechChanTests/Pods-TechChanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2ADE1612E7B2047C6B29BDC /* Pods-TechChanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechChanTests/Pods-TechChanTests.release.xcconfig"; sourceTree = "<group>"; };
+		E3EB540AFE49E53B61161BD8 /* Pods_TechChanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechChanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F790268302734077CB37372D /* Pods-TechChan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechChan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechChan/Pods-TechChan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA0FB5346842D1590976379 /* Pods_TechChan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16F12ABE20344B6F4C58C111 /* Pods_TechChanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +110,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9011B1D0280BEE5996877CE4 /* Pods_TechChanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66A78B482340E6B200788E32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				66A78B492340E70600788E32 /* TouchEventChainTableView.swift */,
+				66A78B4C2340E7F400788E32 /* IBDesignableLabel.swift */,
+				66A78B4D2340E7F400788E32 /* IBDesignableView.swift */,
+				66A78B462340E69300788E32 /* IBDesiganbleButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66A78B4B2340E77C00788E32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66C85CFA2338B5300037EA5C /* TechChanModel.swift */,
+				66798708233B032700FFD94E /* ChatTableViewDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66A78B522340E91900788E32 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				66A78B502340E91000788E32 /* techchan_logo.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		66C85CB52338A5ED0037EA5C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +152,8 @@
 				66C85CDA2338A5F00037EA5C /* TechChanTests */,
 				66C85CE52338A5F00037EA5C /* TechChanUITests */,
 				66C85CBF2338A5ED0037EA5C /* Products */,
+				C36BB42575A0BBAABEB9E16B /* Pods */,
+				C22436ECCA00FCE772D299B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +172,13 @@
 			children = (
 				66C85CC12338A5ED0037EA5C /* AppDelegate.swift */,
 				66C85CC32338A5ED0037EA5C /* SceneDelegate.swift */,
-				66C85CC52338A5ED0037EA5C /* ViewController.swift */,
-				66C85CC72338A5ED0037EA5C /* Main.storyboard */,
+				66C85CFC2338B5480037EA5C /* UserInterface */,
+				66A78B4B2340E77C00788E32 /* Model */,
+				66C85CFD2338B5DD0037EA5C /* View */,
+				66A78B482340E6B200788E32 /* Extensions */,
+				66A78B522340E91900788E32 /* Source */,
 				66C85CCD2338A5F00037EA5C /* Assets.xcassets */,
-				66C85CCF2338A5F00037EA5C /* LaunchScreen.storyboard */,
+				66C85CF42338A6750037EA5C /* GoogleService-Info.plist */,
 				66C85CD22338A5F00037EA5C /* Info.plist */,
 				66C85CCA2338A5ED0037EA5C /* TechChan.xcdatamodeld */,
 			);
@@ -131,6 +203,50 @@
 			path = TechChanUITests;
 			sourceTree = "<group>";
 		};
+		66C85CFC2338B5480037EA5C /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				66C85CCF2338A5F00037EA5C /* LaunchScreen.storyboard */,
+				66C85CC72338A5ED0037EA5C /* Main.storyboard */,
+				66C85CF62338B3B50037EA5C /* Chat.storyboard */,
+				66798705233B00A100FFD94E /* ChatTableViewCell.xib */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		66C85CFD2338B5DD0037EA5C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				66C85CC52338A5ED0037EA5C /* LoginViewController.swift */,
+				66C85CF82338B3FA0037EA5C /* ChatViewController.swift */,
+				66798704233B00A100FFD94E /* ChatTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C22436ECCA00FCE772D299B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				459B027FD13F23A86CFD9D24 /* Pods_TechChan.framework */,
+				1A38BF463D6EA38E38120522 /* Pods_TechChanTests.framework */,
+				E3EB540AFE49E53B61161BD8 /* Pods_TechChanUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C36BB42575A0BBAABEB9E16B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F790268302734077CB37372D /* Pods-TechChan.debug.xcconfig */,
+				1D02400D43854BE6F4C3A7F4 /* Pods-TechChan.release.xcconfig */,
+				A8A304C42DC63B0A91884E10 /* Pods-TechChanTests.debug.xcconfig */,
+				E2ADE1612E7B2047C6B29BDC /* Pods-TechChanTests.release.xcconfig */,
+				01C7D5025177A4B5F9AC6D44 /* Pods-TechChanUITests.debug.xcconfig */,
+				0730706B8A54D260AD481E54 /* Pods-TechChanUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66C85CEB2338A5F00037EA5C /* Build configuration list for PBXNativeTarget "TechChan" */;
 			buildPhases = (
+				6ACECD57A55304E002A8BF94 /* [CP] Check Pods Manifest.lock */,
 				66C85CBA2338A5ED0037EA5C /* Sources */,
 				66C85CBB2338A5ED0037EA5C /* Frameworks */,
 				66C85CBC2338A5ED0037EA5C /* Resources */,
+				D23CB574D5BF408023148778 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66C85CEE2338A5F00037EA5C /* Build configuration list for PBXNativeTarget "TechChanTests" */;
 			buildPhases = (
+				49C3CABFBAADA114DF87EABB /* [CP] Check Pods Manifest.lock */,
 				66C85CD32338A5F00037EA5C /* Sources */,
 				66C85CD42338A5F00037EA5C /* Frameworks */,
 				66C85CD52338A5F00037EA5C /* Resources */,
@@ -173,6 +292,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66C85CF12338A5F00037EA5C /* Build configuration list for PBXNativeTarget "TechChanUITests" */;
 			buildPhases = (
+				A5E8D865144FAD9973F8D8A6 /* [CP] Check Pods Manifest.lock */,
 				66C85CDE2338A5F00037EA5C /* Sources */,
 				66C85CDF2338A5F00037EA5C /* Frameworks */,
 				66C85CE02338A5F00037EA5C /* Resources */,
@@ -236,7 +356,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				66C85CD12338A5F00037EA5C /* LaunchScreen.storyboard in Resources */,
+				66798707233B00A100FFD94E /* ChatTableViewCell.xib in Resources */,
+				66A78B512340E91000788E32 /* techchan_logo.png in Resources */,
+				66C85CF52338A6750037EA5C /* GoogleService-Info.plist in Resources */,
 				66C85CCE2338A5F00037EA5C /* Assets.xcassets in Resources */,
+				66C85CF72338B3B50037EA5C /* Chat.storyboard in Resources */,
 				66C85CC92338A5ED0037EA5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +381,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49C3CABFBAADA114DF87EABB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechChanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACECD57A55304E002A8BF94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechChan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E8D865144FAD9973F8D8A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechChanUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23CB574D5BF408023148778 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechChan/Pods-TechChan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechChan/Pods-TechChan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66C85CBA2338A5ED0037EA5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C85CC62338A5ED0037EA5C /* ViewController.swift in Sources */,
+				66C85CC62338A5ED0037EA5C /* LoginViewController.swift in Sources */,
+				66A78B4F2340E7F400788E32 /* IBDesignableView.swift in Sources */,
+				66C85CFB2338B5300037EA5C /* TechChanModel.swift in Sources */,
+				66A78B472340E69400788E32 /* IBDesiganbleButton.swift in Sources */,
 				66C85CC22338A5ED0037EA5C /* AppDelegate.swift in Sources */,
+				66A78B4E2340E7F400788E32 /* IBDesignableLabel.swift in Sources */,
+				66A78B4A2340E70600788E32 /* TouchEventChainTableView.swift in Sources */,
 				66C85CC42338A5ED0037EA5C /* SceneDelegate.swift in Sources */,
+				66798706233B00A100FFD94E /* ChatTableViewCell.swift in Sources */,
+				66C85CF92338B3FA0037EA5C /* ChatViewController.swift in Sources */,
+				66798709233B032700FFD94E /* ChatTableViewDataSource.swift in Sources */,
 				66C85CCC2338A5ED0037EA5C /* TechChan.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +649,7 @@
 		};
 		66C85CEC2338A5F00037EA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F790268302734077CB37372D /* Pods-TechChan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +668,7 @@
 		};
 		66C85CED2338A5F00037EA5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D02400D43854BE6F4C3A7F4 /* Pods-TechChan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +687,7 @@
 		};
 		66C85CEF2338A5F00037EA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A304C42DC63B0A91884E10 /* Pods-TechChanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +710,7 @@
 		};
 		66C85CF02338A5F00037EA5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2ADE1612E7B2047C6B29BDC /* Pods-TechChanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +733,7 @@
 		};
 		66C85CF22338A5F00037EA5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01C7D5025177A4B5F9AC6D44 /* Pods-TechChanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +754,7 @@
 		};
 		66C85CF32338A5F00037EA5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0730706B8A54D260AD481E54 /* Pods-TechChanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
