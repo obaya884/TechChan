@@ -13,6 +13,7 @@ import Firebase
 final class TechChanModel: NSObject {
     
     var ref: DatabaseReference = Database.database().reference()
+    var handle: UInt?
     
     static let shared = TechChanModel()
     
@@ -40,20 +41,21 @@ final class TechChanModel: NSObject {
     
     // DB更新監視
     func observeChatData(tableView: UITableView) {
-        ref.observe(.childAdded, with: { (snapshot) -> Void in
-            print(snapshot)
-            let dic = snapshot.value as! Dictionary<String, String>
-            self.chatLogArray.insert(["username": dic["username"]!, "message": dic["message"]!, "posttime": dic["posttime"]!], at: 0)
-            print(self.chatLogArray)
-            tableView.reloadData()
-        }) {(error) in
-            print(error.localizedDescription)
-        }
+        handle = ref.observe(.childAdded, with: { (snapshot) -> Void in
+                print(snapshot)
+                let dic = snapshot.value as! Dictionary<String, String>
+                self.chatLogArray.insert(["username": dic["username"]!, "message": dic["message"]!, "posttime": dic["posttime"]!], at: 0)
+                print(self.chatLogArray)
+                tableView.reloadData()
+            }) {(error) in
+                print(error.localizedDescription)
+            }
     }
     
-    // データリセット
+    // リセット
     func resetChatData() {
         chatLogArray.removeAll()
+        ref.removeObserver(withHandle: handle!)
     }
     
     /// 日付フォーマッタ

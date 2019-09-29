@@ -17,7 +17,7 @@ final class ChatViewController: KeyboardSlidingViewController {
     
     @IBOutlet private var userNameLabel: UILabel!
     @IBOutlet private var postMessageTextField: UITextField!
-    @IBOutlet private var chatTableView: TouchEventChainTableView!
+    @IBOutlet private var chatTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
